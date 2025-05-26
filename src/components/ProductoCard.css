@@ -1,0 +1,63 @@
+/* Tarjeta de producto ─────────────────────────────────────── */
+
+.producto-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+  max-width: 220px;               /* ancho fijo de la carta */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+
+  /* transición para el “zoom” */
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* “zoom” suave + sombra al poner el cursor o al enfocarla con TAB */
+.producto-card:hover,
+.producto-card:focus-within {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.producto-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #f0f0f0;            /* color mientras carga */
+}
+
+.producto-card h3 {
+  margin: 0.5rem 0 0.25rem;
+  font-size: 1.1rem;
+}
+
+.producto-card p {
+  color: #00695c;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+/* Botón comprar ───────────────────────────────────────────── */
+
+.btn-comprar {
+  margin-top: auto;
+  background-color: #0d47a1;
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.btn-comprar:hover {
+  background-color: #08306b;
+}

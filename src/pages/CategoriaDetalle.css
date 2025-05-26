@@ -1,0 +1,63 @@
+
+/* ----------  src/pages/CategoriaDetalle.css  ---------- */
+.main-content {
+  display: flex;
+  gap: 2rem;
+  padding: 1.5rem;
+  position: relative; /* para que el drawer se posicione sobre él */
+}
+
+/* ----------------  Drawer de filtros  ---------------- */
+.filtro-container {
+  display: flex; /* visible en escritorio */
+  flex-direction: column;
+  min-width: 220px;
+}
+
+@media (max-width: 768px) {
+  /* Drawer oculto por defecto */
+  .filtro-container {
+    position: fixed;
+    top: 64px; /* altura aprox. del header */
+    left: 0;
+    height: calc(100vh - 64px);
+    width: 80%;
+    max-width: 280px;
+    background-color: #ffffff;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.15);
+    padding: 1rem;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1001;
+  }
+
+  .filtro-container.mostrar {
+    transform: translateX(0);
+  }
+}
+
+/* Backdrop para sombrear el contenido cuando el drawer está abierto */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+/* ----------------  Grid de productos  ---------------- */
+.grid-productos {
+  display: grid;
+  gap: 2rem;
+  justify-content: center;
+  flex: 1 1 auto;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+@media (min-width: 1000px) {
+  .grid-productos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
