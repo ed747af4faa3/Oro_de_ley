@@ -42,8 +42,10 @@
 }
 
 .categoria img {
-  width: 60px;
-  height: 60px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
   margin-bottom: 0.5rem;
 }
 
@@ -76,4 +78,14 @@
   .container {
     padding: 10px 20px;
   }
+}
+
+/* Imagen del logo en la esquina superior izquierda ───────── */
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 90px;       /* Tamaño del logo */
+  height: auto;
+  z-index: 1000;
 }

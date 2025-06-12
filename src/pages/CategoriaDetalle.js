@@ -1,4 +1,3 @@
-// ----------  src/pages/CategoriaDetalle.js  ----------
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import productos from '../data/productos';
@@ -9,21 +8,18 @@ import './CategoriaDetalle.css';
 
 export default function CategoriaDetalle() {
   const { nombre } = useParams();
-  const [genero, setGenero] = useState('Todos');
   const [mostrarFiltro, setMostrarFiltro] = useState(false);
 
-  const productosFiltrados = productos.filter(
-    (p) => p.categoria === nombre && (genero === 'Todos' || p.genero === genero)
-  );
+  const productosFiltrados = productos.filter((p) => p.categoria === nombre);
 
   return (
     <>
       <Header onToggleFiltro={() => setMostrarFiltro(!mostrarFiltro)} />
 
       <div className="main-content">
-        {/* Aside de filtros */}
+        {/* Aside del menú de categorías */}
         <aside className={`filtro-container ${mostrarFiltro ? 'mostrar' : ''}`}>
-          <FiltroGenero genero={genero} setGenero={setGenero} />
+          <FiltroGenero />
         </aside>
 
         {/* Grid de productos */}

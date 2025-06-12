@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import productos from '../data/productos';
 import categorias from '../data/categorias';
 import ProductoCard from '../components/ProductoCard';
+import logo from '../img/logo.png';
 import './Home.css';
 
 export default function Home() {
@@ -15,6 +16,9 @@ export default function Home() {
 
   return (
     <div className="container">
+      {/* Imagen del logo en la esquina superior izquierda */}
+      <img src={logo} alt="Logo de la tienda" className="logo" />
+
       <div className="home">
         <h2>Categorías</h2>
 
