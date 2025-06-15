@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Oro-de-ley/static/css/main.f8ecb279.css",
+    "main.js": "/Oro-de-ley/static/js/main.e5368f5e.js",
+    "static/js/453.611401ee.chunk.js": "/Oro-de-ley/static/js/453.611401ee.chunk.js",
+    "static/media/blusa.png": "/Oro-de-ley/static/media/blusa.fa8740b25392b7a02004.png",
+    "static/media/otros.png": "/Oro-de-ley/static/media/otros.b72f01b27741a2e54877.png",
+    "static/media/pantalon.png": "/Oro-de-ley/static/media/pantalon.a8dbabc61a829021728b.png",
+    "static/media/logo.png": "/Oro-de-ley/static/media/logo.c72f8e8b5c487b0cc193.png",
+    "static/media/vestido.jpg": "/Oro-de-ley/static/media/vestido.836b10d776c18ba2dfd9.jpg",
+    "index.html": "/Oro-de-ley/index.html",
+    "main.f8ecb279.css.map": "/Oro-de-ley/static/css/main.f8ecb279.css.map",
+    "main.e5368f5e.js.map": "/Oro-de-ley/static/js/main.e5368f5e.js.map",
+    "453.611401ee.chunk.js.map": "/Oro-de-ley/static/js/453.611401ee.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f8ecb279.css",
+    "static/js/main.e5368f5e.js"
+  ]
+}
