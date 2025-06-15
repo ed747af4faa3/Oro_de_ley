@@ -4,7 +4,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 
 function ProductoCard({ producto }) {
   // Número con clave internacional (México = 52)
-  const numeroVendedora = "525627899232";
+  const numeroVendedora = "525632316907";
 
   // Mensaje sin saltos de línea, separado con guiones u otros separadores compatibles
   const mensaje = `Hola, estoy interesad@ en este producto: ${producto.nombre} - Precio: $${producto.precio}`;
